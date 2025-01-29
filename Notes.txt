@@ -1,6 +1,7 @@
 These are my raw text notes to document what I'm doing for the challenge.
 
 ##Azure Account Setup##
+-----------------------
 Since I already have an Azure account from my AZ-900 days, I decided to use it.
 I created 2 Management Groups under my Tenant Root Group, per the challenge's recommendation:
 Cloud_Resume_Challenge_Dev_Test (for development)
@@ -11,3 +12,23 @@ Cloud_Resume_Challenge_Prod (for when I deploy)
 Additionally, I installed VScode, Azure Extensions, Azure CLI, Python3, and Azure Functions Core Tools. 
 
 I initially had trouble logging in with "az login", but I was able to get it working using "az login --use-device-code."
+
+##Chunk 0##
+-----------
+Since I already had AZ-900 from work, I can skip this step. 
+
+##Chunk 1##
+-----------
+The purpose of Chunk 1 is to build a static website that will host my resume
+in Azure Storage, accessible via HTTPS. 
+
+HTML:
+Since I already had a resume template that I liked (https://sheetsresume.com/resume-template/),
+I figured I'd convert it into code. If I ever want to change the way my resume looks, I figure the automation
+to be built later in this challenge will help make that process a lot easier. 
+
+I don't pay for any AI chat bots, but I do have the free version of Grok avaiable to me via X;
+I decided to upload the PDF of my anonymized resume to it and get it to spit out html and css for me.
+Apparently PDF uploads are not available to free Grok users, so I took a screenshot of my resume and uploaded that instead.
+It worked! Grok generated code that looked roughly like my current resume. 
+I tested the code via CodPen (https://codepen.io/emzarts/pen/OXzmym), the website linked in the challenge docs.
