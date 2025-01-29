@@ -1,0 +1,13 @@
+These are my raw text notes to document what I'm doing for the challenge.
+
+##Azure Account Setup##
+Since I already have an Azure account from my AZ-900 days, I decided to use it.
+I created 2 Management Groups under my Tenant Root Group, per the challenge's recommendation:
+Cloud_Resume_Challenge_Dev_Test (for development)
+    Azure subscription 1 (from when I studied AZ-900)
+Cloud_Resume_Challenge_Prod (for when I deploy)
+    Cloud_Resume_Challenge_Subscription (for when I deploy)
+
+Additionally, I installed VScode, Azure Extensions, Azure CLI, Python3, and Azure Functions Core Tools. 
+
+I initially had trouble logging in with "az login", but I was able to get it working using "az login --use-device-code."
