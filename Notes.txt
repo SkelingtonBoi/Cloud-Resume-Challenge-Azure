@@ -32,3 +32,10 @@ I decided to upload the PDF of my anonymized resume to it and get it to spit out
 Apparently PDF uploads are not available to free Grok users, so I took a screenshot of my resume and uploaded that instead.
 It worked! Grok generated code that looked roughly like my current resume. 
 I tested the code via CodPen (https://codepen.io/emzarts/pen/OXzmym), the website linked in the challenge docs.
+
+Posting the Static Web Page:
+Resources used:
+https://learn.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn
+
+I was able to get my resume site up using Azure CDN, at this endpoint: https://cdn-endpoint-bhuegele-1.azureedge.net/
+The web page will require some edits, but it's 80% there.
