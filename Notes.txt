@@ -1,6 +1,6 @@
 These are my raw text notes to document what I'm doing for the challenge.
 
-##Azure Account Setup##
+## Azure Account Setup ##
 -----------------------
 Since I already have an Azure account from my AZ-900 days, I decided to use it.
 I created 2 Management Groups under my Tenant Root Group, per the challenge's recommendation:
@@ -13,11 +13,11 @@ Additionally, I installed VScode, Azure Extensions, Azure CLI, Python3, and Azur
 
 I initially had trouble logging in with "az login", but I was able to get it working using "az login --use-device-code."
 
-##Chunk 0##
+## Chunk 0 ##
 -----------
 Since I already had AZ-900 from work, I can skip this step. 
 
-##Chunk 1##
+## Chunk 1 ##
 -----------
 The purpose of Chunk 1 is to build a static website that will host my resume
 in Azure Storage, accessible via HTTPS. 
@@ -34,11 +34,14 @@ It worked! Grok generated code that looked roughly like my current resume.
 I tested the code via CodPen (https://codepen.io/emzarts/pen/OXzmym), the website linked in the challenge docs.
 
 Posting the Static Web Page:
+
 Resources used:
 https://learn.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn
 
 I was able to get my resume site up using Azure CDN, at this endpoint: https://cdn-bhuegele-endpoint-1.azureedge.net/
 The web page will require some edits, but it's 80% there.
+
+DNS Record and Enabling HTTPS:
 
 Endpoint: https://cdn-bhuegele-endpoint-1.azureedge.net
 Hostname: https://bhuegeleteststorage.z13.web.core.windows.net
@@ -51,3 +54,31 @@ the CNAME record information doesn't match the MS docs exactly!
 I was able to add the custom domain www.skelingtonboi.com to my CDN endpoint! I chose to let the CDN
 manage the certificate; according to the docs, it can take up to 24 hours to validate the custom domain.
 When looking under the CDN endpoint, there is a status menu that appears with the validation steps after you enable HTTPS.
+It only took about 30 minutes for my domain to be validated using Azure's DigiCert!
+
+Now if you got to https://www.skelingtonboi.com you will see my static site/resume!
+
+Reflection on Chunk 1:
+----------------------
+I believe I will change my approach to the content of my website, as I 
+don't want to exercise bad OPSEC. Having said that, I know I'll tell a litte bit about myself
+and give links to my LinkedIn, GitHub, etc. I'm sure I'll link to Credly for my certifications too. 
+
+I chased a rabbit of getting my custom domain validated on my storage account, which I realized I didn't need
+since the CDN endpoint would do the hard work. 
+
+I'm glad that purchasing the Domain name from CloudFlare was easy, I just wish their webGUI for adding 
+the records did a better job of conveying what it was doing.
+
+## Chunk 2 ##
+-------------
+This part will be challenging for me, as I am a sysadmin by training and not a developer (especially not a web developer!).
+Although step 7 is creating the Javascript code, apparently it's not done until Chunk 3, which confused me. 
+
+The main purpose of this chunk is to build the backend API, so that's what I'll focus on.
+Note: When creating a Cosmos DB "Table", you have to look under the "Other" tab when creating a new DB.
+
+Azure Functions are very confusing, so I'm watching these videos:
+https://www.youtube.com/watch?v=ieYrBWmkfno
+https://www.youtube.com/watch?v=lpZCwzYVNpA
+
