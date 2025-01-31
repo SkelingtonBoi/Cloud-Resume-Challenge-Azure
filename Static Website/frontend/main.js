@@ -7,7 +7,7 @@ const functionApiUrl = 'https://getresumecount-python.azurewebsites.net/api/GetR
 
 const getVisitCount = () => {
     let count = 30;
-    fetch(functionApi).then(response => {
+    fetch(functionApiUrl).then(response => {
         return response.json()
     }).then(response =>{
         console.log("Website called function API.");
