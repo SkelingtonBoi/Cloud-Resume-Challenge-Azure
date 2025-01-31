@@ -2,7 +2,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 })
 
-const functionApi = 'http://localhost:7071/api/GetResumeCount'; //Azure fuction goes here
+const functionApiUrl = 'https://getresumecount-python.azurewebsites.net/api/GetResumeCount?code=mswwyiSFbEcogvOlMgeeugEggvstjNGBW9zcW7Wnb1K6AzFu4WCnmg%3D%3D'; //Get from Functions Default Key
+// const functionApi = 'http://localhost:7071/api/GetResumeCount'; //Azure fuction local testing goes here
+
 const getVisitCount = () => {
     let count = 30;
     fetch(functionApi).then(response => {
