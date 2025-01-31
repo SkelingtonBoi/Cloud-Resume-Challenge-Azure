@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Static Website", "Static Website", "{C2CD0EA6-92B5-81F1-62B5-42EFBB7EC42C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{2DFAE099-7D3F-19BB-5F34-F2B15EB9694E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureFuctions", "Static Website\backend\AzureFuctions\AzureFuctions.csproj", "{DDE8E2BA-FD9F-774A-536E-893CDC16E87E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDE8E2BA-FD9F-774A-536E-893CDC16E87E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDE8E2BA-FD9F-774A-536E-893CDC16E87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDE8E2BA-FD9F-774A-536E-893CDC16E87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDE8E2BA-FD9F-774A-536E-893CDC16E87E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2DFAE099-7D3F-19BB-5F34-F2B15EB9694E} = {C2CD0EA6-92B5-81F1-62B5-42EFBB7EC42C}
+		{DDE8E2BA-FD9F-774A-536E-893CDC16E87E} = {2DFAE099-7D3F-19BB-5F34-F2B15EB9694E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {25870919-38FB-4681-B4A1-E0A465BC9064}
+	EndGlobalSection
+EndGlobal

@@ -2,13 +2,79 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
+			"label": "clean (functions)",
+			"command": "dotnet",
+			"args": [
+				"clean",
+				"/property:GenerateFullPaths=true",
+				"/consoleloggerparameters:NoSummary"
+			],
+			"type": "process",
+			"problemMatcher": "$msCompile",
+			"options": {
+				"cwd": "${workspaceFolder}/Static Website\\backend\\AzureFuctions"
+			}
+		},
+		{
+			"label": "build (functions)",
+			"command": "dotnet",
+			"args": [
+				"build",
+				"/property:GenerateFullPaths=true",
+				"/consoleloggerparameters:NoSummary"
+			],
+			"type": "process",
+			"dependsOn": "clean (functions)",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": "$msCompile",
+			"options": {
+				"cwd": "${workspaceFolder}/Static Website\\backend\\AzureFuctions"
+			}
+		},
+		{
+			"label": "clean release (functions)",
+			"command": "dotnet",
+			"args": [
+				"clean",
+				"--configuration",
+				"Release",
+				"/property:GenerateFullPaths=true",
+				"/consoleloggerparameters:NoSummary"
+			],
+			"type": "process",
+			"problemMatcher": "$msCompile",
+			"options": {
+				"cwd": "${workspaceFolder}/Static Website\\backend\\AzureFuctions"
+			}
+		},
+		{
+			"label": "publish (functions)",
+			"command": "dotnet",
+			"args": [
+				"publish",
+				"--configuration",
+				"Release",
+				"/property:GenerateFullPaths=true",
+				"/consoleloggerparameters:NoSummary"
+			],
+			"type": "process",
+			"dependsOn": "clean release (functions)",
+			"problemMatcher": "$msCompile",
+			"options": {
+				"cwd": "${workspaceFolder}/Static Website\\backend\\AzureFuctions"
+			}
+		},
+		{
 			"type": "func",
 			"label": "func: host start",
 			"command": "host start",
 			"problemMatcher": "$func-python-watch",
 			"isBackground": true,
 			"options": {
-				"cwd": "${workspaceFolder}/Azure Functions\\Test"
+				"cwd": "${workspaceFolder}/Static Website\\backend\\api"
 			}
 		}
 	]

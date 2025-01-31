@@ -2,9 +2,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     getVisitCount();
 })
 
-const functionApi = ''; //Azure fuction goes here
+const functionApi = 'http://localhost:7071/api/GetResumeCount'; //Azure fuction goes here
 const getVisitCount = () => {
-    let count = 1;
+    let count = 30;
     fetch(functionApi).then(response => {
         return response.json()
     }).then(response =>{

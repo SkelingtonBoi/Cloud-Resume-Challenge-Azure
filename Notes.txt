@@ -87,3 +87,14 @@ have had more luck with it and there was more documentation from what I could te
 
 From what I've found, Microsoft's Azure docs tend to favor C# in a lot of cases, so I might re-factor the back end and use it.
 
+Python Model V2 Azure Function Docs: https://techcommunity.microsoft.com/blog/azurecompute/azure-functions-v2-python-programming-model-is-generally-available/3827474
+Useful code: https://github.com/Sasquatch8946/azure-resume/tree/main/backend/api
+
+After a lot of rabbit chasing, I found that the code here was the most helpful: https://github.com/Sasquatch8946/azure-resume/tree/main/backend/api.
+I built my function using the code referenced above, in a Python V2 HTTP Trigger Azure Function.
+CoPilot helped me figure out my syntax issues when I customized the code.
+
+## Chunk 3 ##
+-------------
+Chunk 3 is all about hooking the backend and frontend together to make a working website!
+
