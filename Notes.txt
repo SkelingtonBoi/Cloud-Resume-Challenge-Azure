@@ -79,6 +79,11 @@ The main purpose of this chunk is to build the backend API, so that's what I'll 
 Note: When creating a Cosmos DB "Table", you have to look under the "Other" tab when creating a new DB.
 
 Azure Functions are very confusing, so I'm watching these videos:
-https://www.youtube.com/watch?v=ieYrBWmkfno
-https://www.youtube.com/watch?v=lpZCwzYVNpA
+https://www.youtube.com/watch?v=ieYrBWmkfno - A Cloud Guru
+https://www.youtube.com/watch?v=lpZCwzYVNpA - John Savill
+
+After doing some digging, I decided to go back to NoSQL for the DB, as it seems like folks on the forums
+have had more luck with it and there was more documentation from what I could tell.
+
+From what I've found, Microsoft's Azure docs tend to favor C# in a lot of cases, so I might re-factor the back end and use it.
 
