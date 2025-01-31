@@ -94,7 +94,32 @@ After a lot of rabbit chasing, I found that the code here was the most helpful: 
 I built my function using the code referenced above, in a Python V2 HTTP Trigger Azure Function.
 CoPilot helped me figure out my syntax issues when I customized the code.
 
+Reflection on Chunk 2:
+----------------------
+I feel bad that I had to look at other folks' code to get my Azure Function working, but at the same time it felt great to get it working!
+GoPilot helped me figure out my typos/syntax errors in the Python code, which was nice. 
+
+I was very greatful for the video by A Cloud Guru; even though she was creating a C# function, I was still able to follow along and understand the end goal.
+I made sure to add some comments in my code so that at least I understand what each piece was doing.
+
 ## Chunk 3 ##
 -------------
 Chunk 3 is all about hooking the backend and frontend together to make a working website!
 
+It only took a few lines of code, as well as configuring the Azure Function CORS settings correctly.
+
+From following A Cloud Guru's guide, I was able to get my functioning counter website working...but not at my domain.
+Problem: If I go to the endpoint URL, the correct website appears (I had to restart the CDN endpoint). Having said that, 
+the actual custom domain doesn't seem to have received the code changes that I've pushed (I can confirm this when I inspect the
+source code).
+
+This seemed to be the fix, purging CDN endpoint Cache: https://blog.atwork.at/post/Force-Azure-static-website-CDN-to-update#:~:text=The%20quick%20solution%20to%20force%20a%20content,the%20bottom%20pf%20the%20panel%20as%20here.
+
+Reflection on Chunk 3:
+----------------------
+This chunk was a lot more work in the Azure Portal than I thought it would be, but A Cloud Guru came to the rescue yet again!
+I was happy I was able to piece apart the problem regarding the CDN caching, as I knew that the hostname and endpoints in my CDN were working (just not the custom domain).
+It feels great knowing I got the functioning website working, even if it (presently) doesn't look great!
+
+## Chunk 4 ##
+-------------
