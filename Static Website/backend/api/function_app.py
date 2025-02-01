@@ -1,5 +1,5 @@
 #Replace the HTTP Trigger pre-made code with your own Azure Function
-#This comment was put here to test the backend.main.yml Github workflow
+#This comment was put here to test the backend.main.yml Github workflow!
 import azure.functions as func
 import logging
 import json
