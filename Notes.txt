@@ -123,3 +123,8 @@ It feels great knowing I got the functioning website working, even if it (presen
 
 ## Chunk 4 ##
 -------------
+Because converting everything I've built by hand into Terraform scares me right now (lol), I chose to do the GitHub actions portion first.
+After following A Cloud Guru's video, it occurred to me that I had to edit my frontend.main.yml workflow a bit to match the different folder stucture that
+I opted to use. (My workflow was uploading the entire repo to $web, which we don't want!)
+Once I removed the all the uneeded files from the storage account container (az storage blob delete-batch --account-name <storage account here> --source '$web' --auth-mode key), 
+I was able to get the frontend pipeline to work correctly, yay!
