@@ -1,9 +1,9 @@
-name: deploy_frontend 
-#deploys when push is made from the frontend folder
+name: deploy_frontend
+# Deploys when push is made from the frontend folder
 on:
   push:
     branches:
-      - main 
+      - main
     paths:
       - 'frontend/**'
 
