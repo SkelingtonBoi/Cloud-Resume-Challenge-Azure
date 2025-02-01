@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'frontend/**'
+      - 'Static Website/frontend/**'
 
 jobs:
   build:
