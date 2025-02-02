@@ -1,3 +1,4 @@
 #Files I don't want to commit
 *.sln
-.github/workflows/backend.main.yml
+**/.terraform/*
+.terraform.tfstate.lock.info
