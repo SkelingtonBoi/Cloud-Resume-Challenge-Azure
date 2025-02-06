@@ -133,3 +133,6 @@ Using Terraform to configure the main infrastructure has been pretty easy, but t
 How to I get the Azure function to use the custom code made for this project?
 How do I populate the CosmosDB container with the correct values?
 How do I get the custom website code into the $web container?
+
+Deploying the Azure Function has proven difficult, as apparently Flex Consumption Plans are difficult to implement in Terraform (gotta love M$).
+Knowing I've been able to lay the core infrastructure with Terraform, I will probably keep my manual build as the live page since it's already functional.
