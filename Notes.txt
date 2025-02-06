@@ -128,3 +128,8 @@ After following A Cloud Guru's video, it occurred to me that I had to edit my fr
 I opted to use. (My workflow was uploading the entire repo to $web, which we don't want!)
 Once I removed the all the uneeded files from the storage account container (az storage blob delete-batch --account-name <storage account here> --source '$web' --auth-mode key), 
 I was able to get the frontend pipeline to work correctly, yay!
+
+Using Terraform to configure the main infrastructure has been pretty easy, but the main problems I'm facing are:
+How to I get the Azure function to use the custom code made for this project?
+How do I populate the CosmosDB container with the correct values?
+How do I get the custom website code into the $web container?

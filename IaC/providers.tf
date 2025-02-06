@@ -8,10 +8,13 @@ terraform {
       source  = "hashicorp/random"
       version = "~>3.0"
     }
+    azapi = {
+      source = "Azure/azapi"
+    }
   }
 }
 
 provider "azurerm" {
   features {}
-  subscription_id = "25225523-6c6d-4ecd-a118-bf0bfc775244"
+  subscription_id = "azure-subscription-id"
 }

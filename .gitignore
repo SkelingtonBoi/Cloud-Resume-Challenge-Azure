@@ -2,3 +2,4 @@
 *.sln
 **/.terraform/*
 .terraform.tfstate.lock.info
+*.tfstate*
