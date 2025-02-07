@@ -21,13 +21,13 @@ jobs:
         with:
           inlineScript: |
             az storage blob upload-batch --account-name bhuegeleteststorage --auth-mode key -d '$web' -s 'Static Website/frontend/'
-        #az storage blob upload-batch --account-name skelingtonboistorage --auth-mode key -d '$web' -s 'Static Website/frontend/'
+
       - name: Purge CDN endpoint
         uses: azure/CLI@v1
         with:
           inlineScript: |
             az cdn endpoint purge --content-paths "/*" --resource-group "Static_Site" --profile-name "cdn-bhuegele-profile-1" --name "cdn-bhuegele-endpoint-1"
-        #az cdn endpoint purge --content-paths "/*" --resource-group "Static_Site" --profile-name "cdn-skelingtonboi-profile" --name "cdn-skelingtonboi-endpoint"
+
   # Azure logout
       - name: logout
         run: |
