@@ -7,6 +7,7 @@ how many users have visited the site.
 This is the architecture of the project:
 
 ** Architecture Picture Here **
+![AzureCRC.jpg](AzureCRC.jpg)
 
 This is the basic structure of this repo:
 
