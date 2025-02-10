@@ -38,13 +38,13 @@ Posting the Static Web Page:
 Resources used:
 https://learn.microsoft.com/en-us/azure/cdn/cdn-create-a-storage-account-with-cdn
 
-I was able to get my resume site up using Azure CDN, at this endpoint: https://cdn-bhuegele-endpoint-1.azureedge.net/
+I was able to get my resume site up using Azure CDN, at this endpoint: https://<cdn-endpoint-here>.azureedge.net/
 The web page will require some edits, but it's 80% there.
 
 DNS Record and Enabling HTTPS:
 
-Endpoint: https://cdn-bhuegele-endpoint-1.azureedge.net
-Hostname: https://bhuegeleteststorage.z13.web.core.windows.net
+Endpoint: https://<cdn-endpoint-here>.azureedge.net
+Hostname: https://<container-storage-here>.z13.web.core.windows.net
 
 Using this article, I got my custom DNS record from CloudFlare to resolve to my CDN endpoint:
 https://learn.microsoft.com/en-us/azure/cdn/cdn-map-content-to-custom-domain?tabs=dns-provider%2Cazure-portal%2Cazure-portal-cleanup
